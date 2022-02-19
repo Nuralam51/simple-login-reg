@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.invalid {
+    width: 100%;
+    margin-left: 6.25rem;
+    margin-top: 0rem;
+    font-size: 0.875em;
+    color: #dc3545;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
