@@ -46,7 +46,6 @@ export class LoginComponent implements OnInit {
             this.authService.findUserByEmail(this.user.email).subscribe(data => {
                 this.currentUser = data;
                 localStorage.setItem("userInfo", JSON.stringify(this.currentUser));
-                window.location.reload();
             })
         }, err => {
             this.errorMessages = "Mismatch Email & password!!!"

@@ -48,7 +48,7 @@ export class RegisterComponent implements OnInit {
         this.authService.register(this.user).subscribe(data => {
             this.router.navigate(['register/otp']);
         }, err => {
-            this.errorMessages = "Registration cant success. Try again..."
+            this.errorMessages = "Email already exists. Use another email."
         });
         console.log(this.user);
 
