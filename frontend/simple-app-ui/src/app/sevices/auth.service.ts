@@ -44,7 +44,7 @@ export class AuthService {
         const headers = {
             Authorization: 'Bearer ' + localStorage.getItem('access_token')
         };
-        return this.http.get("http://localhost:9000/api/v2/user-details/"+ email, {headers: headers});
+        return this.http.get("http://localhost:9000/api/v1/user-details/"+ email, {headers: headers});
     }
 
     register(user: User): Observable<any> {
